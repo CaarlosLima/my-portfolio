@@ -3,7 +3,7 @@ import { NavigationMenu, NavigationMenuItem, NavigationMenuLink, NavigationMenuL
 
 export function PageHeader({ user }: { user?: User }) {
   return (
-    <header className="fixed flex h-12 w-full items-center justify-between border-b border-b-slate-600 bg-slate-950 px-24">
+    <header className="fixed flex h-12 w-full items-center justify-between px-24">
       <a href="#home" className="flex items-center justify-center font-bold">
         {user?.name}
 

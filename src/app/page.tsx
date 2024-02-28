@@ -1,3 +1,4 @@
+import { Background } from '@/components/background'
 import { PageHeader } from '@/components/page-header'
 
 export default async function Home() {
@@ -5,7 +6,9 @@ export default async function Home() {
   const user = await response.json()
 
   return (
-    <div className="relative flex min-h-screen flex-col items-center bg-slate-950 text-slate-100">
+    <div className="relative flex min-h-screen flex-col items-center text-slate-100">
+      <Background />
+
       <PageHeader user={user} />
 
       <main />
