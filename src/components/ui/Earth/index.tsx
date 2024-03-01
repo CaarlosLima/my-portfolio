@@ -1,15 +1,14 @@
 /* eslint-disable react/no-unknown-property */
-
 'use client'
 
 import { useFrame, useLoader } from '@react-three/fiber'
 import { BufferGeometry, DoubleSide, Material, Mesh, NormalBufferAttributes, Object3DEventMap, TextureLoader } from 'three'
 
+import EarthCloudsMap from '@/assets/textures/2k_earth_clouds.jpg'
+import EarthDayMap from '@/assets/textures/2k_earth_daymap.jpg'
+import EarthNormalMap from '@/assets/textures/2k_earth_normal_map.jpg'
+import EarthSpecularMap from '@/assets/textures/2k_earth_specular_map.jpg'
 import { useRef } from 'react'
-import EarthCloudsMap from '../../assets/textures/2k_earth_clouds.jpg'
-import EarthDayMap from '../../assets/textures/2k_earth_daymap.jpg'
-import EarthNormalMap from '../../assets/textures/2k_earth_normal_map.jpg'
-import EarthSpecularMap from '../../assets/textures/2k_earth_specular_map.jpg'
 
 export function Earth() {
   const [colorMap, normalMap, specularMap, cloudsMap] = useLoader(TextureLoader, [
