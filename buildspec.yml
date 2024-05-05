@@ -7,7 +7,6 @@ phases:
     commands:
   pre_build:
     commands:
-      - corepack enable
       - corepack prepare
       - pnpm install --frozen-lockfile
   build:
