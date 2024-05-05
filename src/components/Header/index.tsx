@@ -11,6 +11,8 @@ export function PageHeader() {
         </a>
       </h1>
 
+      <span className="rounded-lg bg-red-700 px-2">IN PROGRESS</span>
+
       <NavigationMenu>
         <NavigationMenuList>
           <NavigationMenuItem>
