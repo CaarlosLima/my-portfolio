@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-  pre-build:
+  pre_build:
     commands:
       - pnpm install --frozen-lockfile
   build:
