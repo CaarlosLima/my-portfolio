@@ -1,11 +1,7 @@
-import Image from 'next/image'
-
 export function AboutMe() {
   return (
     <section id="about" className="flex min-h-[calc(100vh)] items-center justify-center gap-16 px-12">
-      <Image src={'/photo.jpg'} alt="Profile photo" width={250} height={200} className="rounded-2xl" />
-
-      <span className="flex flex-col gap-2 text-left">
+      <span className="flex max-w-[1100px] flex-col gap-2 text-center">
         <h2 className="font-mono text-xl font-bold uppercase tracking-widest">About me</h2>
 
         <p className="text-xl font-extralight">
