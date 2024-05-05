@@ -17,6 +17,10 @@ jobs:
       with:
         node-version: '18.x'
         cache: 'pnpm'
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+      with:
+        static_site_generator: next
     - name: Install dependencies
       run: pnpm install --frozen-lockfile
     - name: Linting
