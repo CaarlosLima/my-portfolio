@@ -5,7 +5,8 @@ phases:
     runtime-versions:
       nodejs: 18
     commands:
-      - npm install -g pnpm
+      - corepack enable
+      - corepack prepare
   pre_build:
     commands:
       - pnpm install --frozen-lockfile
