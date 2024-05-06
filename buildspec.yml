@@ -12,3 +12,7 @@ phases:
   build:
     commands:
       - pnpm build
+  post_build:
+    commands:
+      - aws s3 sync ./out s3://${DEPLOY_BUCKET} --delete
+      - aws cloudfront create-invalidation --distribution-id ${CLOUDFRONT_ID} --paths "/*"
