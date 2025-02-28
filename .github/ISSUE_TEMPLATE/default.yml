@@ -1,0 +1,34 @@
+name: Defult Template
+description: Description
+body:
+  - type: textarea
+    attributes:
+      label: Contexto
+      description: Um contexto geral sobre
+      value: |
+        ## Contexto
+        _conteúdo aqui_
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Referências
+      description: Imagens ou links de referências
+      value: |
+        <details>
+          <summary><b>Referências</b></summary>
+
+          _conteúdo aqui_
+          </br>
+        </details>
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Progresso
+      description: Passo a passo detalhado da resolução da issue
+      value: |
+        ## Progresso
+        - [ ] _conteúdo aqui_
+    validations:
+      required: true
