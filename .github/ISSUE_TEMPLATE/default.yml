@@ -3,7 +3,7 @@ description: Description
 body:
   - type: textarea
     attributes:
-      label: [##Contexto]
+      label: \#\#Contexto
       description: Um contexto geral sobre
       value: |
         ## Contexto
