@@ -3,16 +3,13 @@ description: Description
 body:
   - type: textarea
     attributes:
-      label: \#\#Contexto
+      label: Contexto
       description: Um contexto geral sobre
-      value: |
-        ## Contexto
-        _conteúdo aqui_
     validations:
       required: true
   - type: textarea
     attributes:
-      label: (## Referências)
+      label: Referências
       description: Imagens ou links de referências
       value: |
         <details>
@@ -25,10 +22,9 @@ body:
       required: false
   - type: textarea
     attributes:
-      label: "## Progresso"
+      label: Progresso
       description: Passo a passo detalhado da resolução da issue
       value: |
-        ## Progresso
         - [ ] _conteúdo aqui_
     validations:
       required: true
