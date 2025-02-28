@@ -49,9 +49,22 @@ body:
         - Safari
         - Microsoft Edge
   - type: textarea
+    attributes:
+      label: RENDER Environment
+      description: |
+        examples:
+          - **OS**: Ubuntu 20.04
+          - **Node**: 13.14.0
+          - **npm**: 7.6.3
+      value: |
+          - OS:
+          - Node:
+          - npm:
+      render: markdown
+  - type: textarea
     id: logs
     attributes:
-      label: Relevant log output
+      label: RENDER Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes
